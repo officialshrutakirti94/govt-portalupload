@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .m-4{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Card</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="m-4">
+    <form action="/aadhar" method="post">
+    <div class="card" style="width: 300px;">
+        <img src="./images/aadhar.png" height="200px" class="card-img-top" alt="Sample Image">
+        <div class="card-body text-center">
+            <h5 class="card-title">Upload Aadhar Card</h5>
+            <input type="file" name="adhar">
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+    </div>
+    </form>
+    <form action="/pan" method="post">
+    <div class="card" style="width: 300px;">
+        <img src="./images/pan.webp" class="card-img-top" alt="Sample Image">
+        <div class="card-body text-center">
+            <h5 class="card-title">Upload PAN card</h5>
+            <input type="file">
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+    </div>
+    </form>
+    <form action="/voter" method="post">
+    <div class="card" style="width: 300px;">
+        <img src="./images/voter.png"  height="200px" class="card-img-top" alt="Sample Image">
+        <div class="card-body text-center">
+            <h5 class="card-title">Upload voter card</h5>
+            <input type="file">
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+    </div>
+    </form>
+
+</div>
+</body>
+</html>
