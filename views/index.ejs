@@ -8,6 +8,10 @@
             justify-content: center;
         }
 
+        .card{
+            border-radius: 1px;
+        }
+
     </style>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,12 +21,12 @@
 </head>
 <body>
 <div class="m-4">
-    <form action="/aadhar" method="post">
+    <form action="/aadhar" method="post" enctype="multipart/form-data">
     <div class="card" style="width: 300px;">
         <img src="./images/aadhar.png" height="200px" class="card-img-top" alt="Sample Image">
         <div class="card-body text-center">
             <h5 class="card-title">Upload Aadhar Card</h5>
-            <input type="file" name="adhar">
+            <input type="file" name="adhar_img">
         </div>
         <button type="submit" class="btn btn-primary">Upload</button>
     </div>
@@ -32,7 +36,7 @@
         <img src="./images/pan.webp" class="card-img-top" alt="Sample Image">
         <div class="card-body text-center">
             <h5 class="card-title">Upload PAN card</h5>
-            <input type="file">
+            <input type="file" name="pan_img">
         </div>
         <button type="submit" class="btn btn-primary">Upload</button>
     </div>
@@ -42,7 +46,7 @@
         <img src="./images/voter.png"  height="200px" class="card-img-top" alt="Sample Image">
         <div class="card-body text-center">
             <h5 class="card-title">Upload voter card</h5>
-            <input type="file">
+            <input type="file" name="voter_img">
         </div>
         <button type="submit" class="btn btn-primary">Upload</button>
     </div>
